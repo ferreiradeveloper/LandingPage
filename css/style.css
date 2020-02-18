@@ -1,0 +1,230 @@
+:root {
+    --naranja: #ff680c;
+    --morado: #5433a3;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Noto Sans',sans-serif;
+}
+
+*, *::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Generales */
+h1 {
+    font-size: 3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+button.btn {
+    border: none;
+    text-emphasis: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1rem;
+    cursor: pointer;
+    letter-spacing: .1rem;
+}
+
+/* hero */
+.header-container {
+    width: 100%;
+    background-image: url('../img/garage-hero.jpg');
+    background-position: center center;
+    height: 65rem;
+    position: relative;
+}
+
+.header-container::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(255,104,12,.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.site-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+}
+
+.site-header .logo h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .2rem;
+    margin-left: 4rem;
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+.site-header .menu-header ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 7rem;
+} 
+
+@media (min-width: 768px) {
+    .site-header .menu-header ul {
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+}
+
+.site-header .menu-header ul li {
+    padding: 1rem;
+    transition: all .3s ease-in-out;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .site-header .menu-header ul li {
+        padding: 1rem 4rem;        
+    }
+}
+
+.site-header .menu-header ul li:hover {
+    background-color: rgba(255,255,255,.5);
+    border-radius: .3rem;    
+}
+
+.menu-header ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+}
+
+.menu-header ul li:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .menu-header ul li:last-child {
+        margin-right: 12rem;
+    }
+}
+
+.header-container .buscador-container {
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    margin-left: 0;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 660px) {
+    .header-container .buscador-container {
+        width: 58rem;
+        margin-left: 12%;
+        margin-top: 15%;        
+    }
+}
+
+@media (min-width: 768px) {
+    .header-container .buscador-container {
+        width: 70rem;
+        margin-left: 25%;       
+    }
+}
+
+@media (min-width: 1400px) {
+    .header-container .buscador-container {
+        margin-left: 30%;
+        margin-top: 10%;       
+    }
+}
+
+h2.subtitulo-principal {
+    margin-left: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+    letter-spacing: .2rem;
+}
+
+@media (min-width: 768px) {
+    h2.subtitulo-principal {
+        margin-left: 0;
+        font-size: 3.5rem;        
+    }
+}
+
+.buscador-container span {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.buscador-container .input-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+input.buscador {
+    width: 50%;
+    padding: 1rem;
+    border: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: .9rem;
+}
+
+@media (min-width: 500px) {
+    input.buscador {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    input.buscador {
+        font-size: 1.5rem;
+    }
+}
+
+.btn.btn-buscar {
+    background-color: var(--morado);
+    color: white;
+    width: 20%;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .btn.btn-buscar {
+        width: 10%;
+        font-size: 1.5rem;
+    }
+}
+
