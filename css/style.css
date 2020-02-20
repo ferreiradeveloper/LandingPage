@@ -588,3 +588,63 @@ blockquote.texto-testimonial {
         grid-column: 2 /3;
     }    
 }
+
+footer.site-footer {
+    border-top: solid 10px var(--naranja);
+    padding-bottom: 3rem;
+}
+
+h2.subtitulo-principal.seccion-productos {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    h2.subtitulo-principal.seccion-productos {
+        margin-left: 2rem;
+    }    
+}
+
+.contenedor-regiones {
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    .contenedor-regiones {
+        flex-direction: row;
+    }    
+}
+
+@media (min-width: 768px) {
+    .contenedor-regiones {
+        width: 120rem;
+    }    
+}
+
+.contenedor-regiones ul {
+    flex: 0 0 20%;
+    margin-top: 2rem;
+    list-style: none;
+    text-align: center;
+}
+
+.contenedor-regiones ul span {
+    color: var(--morado);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.contenedor-regiones ul li {
+    color:var(--morado);
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
